@@ -1,0 +1,200 @@
+.qr-checkin-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f7f9ff 0%, #ffffff 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-checkin-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.qr-checkin-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, #1a1f5a 0%, #2a3080 100%);
+  border-radius: 24px;
+  color: white;
+  box-shadow: 0 18px 40px rgba(26, 31, 90, 0.16);
+}
+
+.qr-checkin-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.qr-checkin-subtitle {
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #c8d9ff;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.qr-checkin-card {
+  background-color: white;
+  border: 1px solid #e3e9f8;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 16px 36px rgba(17, 24, 39, 0.06);
+}
+
+.alert {
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.alert-danger {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  border: 1px solid #bbef63;
+  color: #059669;
+}
+
+.loading-state,
+.error-state {
+  padding: 32px 28px;
+  text-align: center;
+  color: #6b7ba4;
+  font-weight: 600;
+}
+
+.error-state {
+  color: #dc2626;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+}
+
+.booking-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 500px) {
+  .booking-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #f0f4ff;
+  border: 1px solid #e3e9f8;
+  border-radius: 12px;
+}
+
+.detail-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7ba4;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1f5a;
+  word-break: break-word;
+}
+
+.detail-value.status-approved {
+  color: #059669;
+  background-color: #d1fae5;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.detail-value.status-pending {
+  color: #f59e0b;
+  background-color: #fef3c7;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.detail-value.status-rejected {
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.detail-value.status-checked_in {
+  color: #059669;
+  background-color: #d1fae5;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.qr-checkin-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn-check-in {
+  flex: 1;
+  padding: 14px;
+  background-color: #059669;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-check-in:hover:not(:disabled) {
+  background-color: #047857;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(5, 150, 105, 0.3);
+}
+
+.btn-check-in:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-disabled-reason {
+  padding: 14px;
+  background-color: #fef3c7;
+  border: 1px solid #fdba74;
+  color: #92400e;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}

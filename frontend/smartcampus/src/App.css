@@ -1,0 +1,18 @@
+/* Smart Campus App Styles */
+
+/* Custom form controls */
+.form-control {
+  border: 1px solid var(--sc-border);
+  border-radius: 8px;
+  padding: 0.65rem 0.9rem;
+  font-family: "Sora", sans-serif;
+  font-size: 0.95rem;
+  color: var(--sc-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--sc-primary);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+}
